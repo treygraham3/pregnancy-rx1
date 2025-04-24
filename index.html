@@ -1,29 +1,147 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>PregnancyRx</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PregnancyRx – Medication Info</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f9fc;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #3f51b5;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 25px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.06);
+    }
+    h2 {
+  margin-left: 10px;
+
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+      color: #3f51b5;
+      margin-bottom: 10px;
+    }
+    h2::before {
+      content: "";
+      margin-right: 10px;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    a {
+      color: #3f51b5;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .subtitle {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+    .avoid {
+      color: red;
+      font-weight: bold;
+    }
+    .disclaimer {
+      font-size: 0.9rem;
+      color: #555;
+      text-align: center;
+      margin-top: 40px;
+      padding-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>PregnancyRx</h1>
-    <p>Your guide to safe medication use during pregnancy</p>
-  </header>
-
-  <main>
-    <h2>Select a Drug</h2>
-    <ul>
-      <li><a href="labetalol.html">Labetalol</a></li>
-      <li><a href="ibuprofen.html">Ibuprofen</a></li>
-      <li><a href="ondansetron.html">Ondansetron</a></li>
-
-    </ul>
-  </main>
-
-  <footer>
-    <p><small>Not medical advice. For educational purposes only.</small></p>
-  </footer>
+<header>
+  <h1>PregnancyRx</h1>
+  <p><strong>Wondering what’s safe to take during pregnancy?</strong><br>We’re here to help you understand medication safety—one condition at a time.</p>
+  <p class="subtitle">Click on a condition to see commonly used medications and whether they are considered safe during pregnancy.</p>
+</header>
+<main>
+  <section><h2>🩺 Hypertension</h2><ul style="margin-left: 24px;">
+    <li><a style="font-weight: 600;" href="labetalol.html">Labetalol</a></li>
+    <li><a style="font-weight: 600;" href="methyldopa.html">Methyldopa</a></li>
+    <li><a style="font-weight: 600;" href="nifedipine.html">Nifedipine</a></li>
+    <li><a style="font-weight: 600;" href="lisinopril_warning_updated.html">Lisinopril</a> <span class="avoid">(avoid)</span></li>
+    <li><a style="font-weight: 600;" href="losartan_warning.html">Losartan</a> <span class="avoid">(avoid)</span></li>
+    <li><a style="font-weight: 600;" href="spironolactone_warning.html">Spironolactone</a> <span class="avoid">(avoid)</span></li>
+  </ul></section>
+  <section><h2>🧬 Diabetes</h2><ul style="margin-left: 24px;">
+    <li><a style="font-weight: 600;" href="metformin.html">Metformin</a></li>
+    <li><a style="font-weight: 600;" href="insulin.html">Insulin</a></li>
+    <li><a style="font-weight: 600;" href="jardiance.html">Jardiance</a> <span class="avoid">(avoid)</span></li>
+  </ul></section>
+  <section><h2>🧠 Mental Health</h2><ul style="margin-left: 24px;">
+    <li><a style="font-weight: 600;" href="sertraline.html">Sertraline</a></li>
+    <li><a style="font-weight: 600;" href="fluoxetine.html">Fluoxetine</a></li>
+    <li><a style="font-weight: 600;" href="citalopram.html">Citalopram</a></li>
+    <li><a style="font-weight: 600;" href="escitalopram.html">Escitalopram</a></li>
+    <li><a style="font-weight: 600;" href="bupropion.html">Bupropion</a></li>
+    <li><a style="font-weight: 600;" href="lorazepam_warning.html">Lorazepam</a> <span class="avoid">(avoid)</span></li>
+  </ul></section>
+  <section><h2>🌬️ Asthma & Respiratory</h2><ul style="margin-left: 24px;">
+    <li><a style="font-weight: 600;" href="albuterol.html">Albuterol</a></li>
+    <li><a style="font-weight: 600;" href="budesonide.html">Budesonide</a></li>
+    <li><a style="font-weight: 600;" href="montelukast.html">Montelukast</a></li>
+  </ul></section>
+  <section><h2>🧪 Autoimmune</h2><ul style="margin-left: 24px;">
+    <li><a style="font-weight: 600;" href="hydroxychloroquine.html">Hydroxychloroquine</a></li>
+    <li><a style="font-weight: 600;" href="azathioprine.html">Azathioprine</a></li>
+    <li><a style="font-weight: 600;" href="methotrexate_warning.html">Methotrexate</a> <span class="avoid">(avoid)</span></li>
+    <li><a style="font-weight: 600;" href="mycophenolate_warning.html">Mycophenolate</a> <span class="avoid">(avoid)</span></li>
+  </ul></section>
+  <section><h2>🧫 Infections</h2><ul style="margin-left: 24px;">
+    <li><a style="font-weight: 600;" href="amoxicillin.html">Amoxicillin</a></li>
+    <li><a style="font-weight: 600;" href="azithromycin.html">Azithromycin</a></li>
+    <li><a style="font-weight: 600;" href="metronidazole.html">Metronidazole</a></li>
+    <li><a style="font-weight: 600;" href="nitrofurantoin.html">Nitrofurantoin</a></li>
+    <li><a style="font-weight: 600;" href="doxycycline_warning.html">Doxycycline</a> <span class="avoid">(avoid)</span></li>
+  </ul></section>
+  <section><h2>🤢 Nausea / GI</h2><ul style="margin-left: 24px;">
+    <li><a style="font-weight: 600;" href="ondansetron.html">Ondansetron</a></li>
+    <li><a style="font-weight: 600;" href="promethazine.html">Promethazine</a></li>
+  </ul></section>
+  <section><h2>🩸 Anticoagulation</h2><ul style="margin-left: 24px;">
+    <li><a style="font-weight: 600;" href="enoxaparin.html">Enoxaparin</a></li>
+    <li><a style="font-weight: 600;" href="aspirin.html">Aspirin (low-dose)</a></li>
+    <li><a style="font-weight: 600;" href="warfarin_warning.html">Warfarin</a> <span class="avoid">(avoid)</span></li>
+  </ul></section>
+  <section><h2>🌡️ Flu</h2><ul style="margin-left: 24px;">
+    <li><a style="font-weight: 600;" href="tamiflu_individual.html">Tamiflu</a></li>
+    <li><a style="font-weight: 600;" href="xofluza.html">Xofluza</a></li>
+  </ul></section>
+  <section><h2>🧬 Hormones / Preventative</h2><ul style="margin-left: 24px;">
+    <li><a style="font-weight: 600;" href="levothyroxine.html">Levothyroxine</a></li>
+    <li><a style="font-weight: 600;" href="progesterone.html">Progesterone</a></li>
+    <li><a style="font-weight: 600;" href="folic_acid.html">Folic Acid</a></li>
+  </ul></section>
+  <section>
+    <h2>🚫 Drugs to Avoid During Pregnancy</h2>
+    <p><a style="font-weight: 600;" href="drugs-to-avoid.html">View list of contraindicated medications &raquo;</a></p>
+  </section>
+</main>
+<footer class="disclaimer">
+  <p>This site is for educational purposes only. Always consult your healthcare provider.</p>
+</footer>
 </body>
 </html>
